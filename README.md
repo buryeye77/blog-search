@@ -54,3 +54,8 @@ Host: localhost:8080
 |-----|-----|--------------------|
 |keyword|String|검색어|
 |count|Integer|검색어가 조회된 수|
+
+## 2.기타
+#### 실행 파일 위치
+./blog-0.0.1-SNAPSHOT.jar
+
