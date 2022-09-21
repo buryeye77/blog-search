@@ -25,7 +25,7 @@ Host: localhost:8080
 |-----|-----|--------------------|
 |search_count|Integer|갬색된 문서 수    |
 |is_end|Boolean|현재 페이지가 마지막 페이지인 지 여부|
-|documents|Documents|검색한 블로그 정보|
+|documents|Documents|검색한 블로그 정보 리스트|
 
 #### Document
 |Name|Type|Description|
@@ -46,7 +46,9 @@ Host: localhost:8080
 
 #### Response
 
-검색 순위 상위 10개의 검색어-조횟수 쌍 리스트 
+검색 순위 상위 10개의 검색어-조횟수 쌍 리스트
+
+#### 검색어-조횟수
 
 |Name|Type|Description|
 |-----|-----|--------------------|
