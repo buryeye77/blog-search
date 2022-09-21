@@ -5,6 +5,7 @@
 1-1. 블로그 검색
 
 기본 정보
+
 GET /blogs
 Host: localhost:8080
 
@@ -24,22 +25,33 @@ Response
 |-----|-----|--------------------|
 |search_count|Integer|갬색된 문서 수    |
 |is_end|Boolean|현재 페이지가 마지막 페이지인 지 여부|
-|documents|Document|검색한 블로그 정보|
+|documents|Documents|검색한 블로그 정보|
 
 Document
 |Name|Type|Description|
 |-----|-----|--------------------|
-|search_count|Integer|갬색된 문서 수    |
-|is_end|Boolean|현재 페이지가 마지막 페이지인 지 여부|
-|documents|Document|검색한 블로그 정보|
-|search_count|Integer|갬색된 문서 수    |
-|is_end|Boolean|현재 페이지가 마지막 페이지인 지 여부|
-|documents|Document|검색한 블로그 정보|
+|title|String|블로그 글 제목    |
+|contents|String|블로그 글 요약|
+|blogname|String|블로그 이름|
+|postdate|Date|블로그 작성 시간 [YYYY]-[MM]-[DD]|
+|link|String|블로그 글 URL|
 
 
 1-2. 인기 검색어
+
 기본 정보
+
 GET /popular-keywords
 Host: localhost:8080
-  
- 
+
+Response
+
+검색 순위 상위 10개의 검색어-조횟수 쌍 리스트 
+
+|Name|Type|Description|
+|-----|-----|--------------------|
+|keyword|String|검색어|
+|count|Integer|검색어가 조회된 수|
+
+
+2. 
