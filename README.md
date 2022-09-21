@@ -9,7 +9,7 @@
 GET /blogs
 Host: localhost:8080
 
-Request
+#### Request
 
 |Name|Type|Description|Required|
 |-----|-----|--------------------|-----|
@@ -19,7 +19,7 @@ Request
 |size|Integer|한 페이지에 보여질 문서의 수, 1 ~ 50 사이의 값, 기본값 10|X|
 |type|String|검색 소스, 현재는 kakao 외에 지원 안 됨, 기본값 kakao|X|
 
-Response
+#### Response
 
 |Name|Type|Description|
 |-----|-----|--------------------|
@@ -27,7 +27,7 @@ Response
 |is_end|Boolean|현재 페이지가 마지막 페이지인 지 여부|
 |documents|Documents|검색한 블로그 정보|
 
-Document
+#### Document
 |Name|Type|Description|
 |-----|-----|--------------------|
 |title|String|블로그 글 제목    |
@@ -37,14 +37,14 @@ Document
 |link|String|블로그 글 URL|
 
 
-1-2. 인기 검색어
+### 1-2. 인기 검색어
 
-기본 정보
+#### 기본 정보
 
 GET /popular-keywords
 Host: localhost:8080
 
-Response
+#### Response
 
 검색 순위 상위 10개의 검색어-조횟수 쌍 리스트 
 
@@ -54,4 +54,4 @@ Response
 |count|Integer|검색어가 조회된 수|
 
 
-2. 
+## 2. 
