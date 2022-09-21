@@ -52,6 +52,3 @@ Host: localhost:8080
 |-----|-----|--------------------|
 |keyword|String|검색어|
 |count|Integer|검색어가 조회된 수|
-
-
-## 2. 
