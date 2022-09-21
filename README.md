@@ -1,10 +1,10 @@
 # blog-search
 
-1. API 명세
+##1. API 명세
  
-1-1. 블로그 검색
+###1-1. 블로그 검색
 
-기본 정보
+####기본 정보
 
 GET /blogs
 Host: localhost:8080
